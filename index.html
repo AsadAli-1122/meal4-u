@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Document</title>
+  <link rel="stylesheet" href="assets/index-53b888de.css">
+</head>
+<body>
+    <div class="header w-[100%] pb-10 overflow-hidden">
+        <header class="flex justify-between bg-yellow-300 sm:h-36 md:h-40 lg:h-44 items-center sm:rounded-bl-[40%] sm:rounded-br-[70%] md:rounded-bl-[45%] md:rounded-br-[80%] lg:rounded-bl-[50%] lg:rounded-br-[85%] -ml-20 -mr-28 -mt-3 border-b-2 border-white shadow-2xl">
+            <img src="assets/logo-171b2f1f.png" alt="brand-logo" class="sm:w-[20%] md:w-[15%] lg:w-[13%] ml-32 cursor-pointer">
+            <div class="text-white sm:hidden md:block text-3xl">Malkevejen 55, <br><span class="underline underline-offset-2"> 4000 Roskilde</span></div>
+            <div class="mr-36 flex">
+                <div class="border-t-4 border-b-4 border-white">
+                    
+    <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="pt-[4px] text-white bg-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-white font-medium text-sm text-center inline-flex items-center dark:bg-white dark:hover:bg-white dark:focus:ring-white" type="button"><svg class="w-6 h-2 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+    <!-- Dropdown menu -->
+    <div id="dropdown" class="z-10 hidden bg-yellow-400 divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+        <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+          </li>
+        </ul>
+    </div>
+    
+                </div>
+                <div class="sm:hidden ml-3 text-white text-xl font-semibold md:flex space-x-2">
+                    <i class="fa-regular fa-circle-user text-2xl"></i> 
+                    <h1>Login</h1>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="after-header-text text-center sm:-mt-6 md:hidden">
+        Malkevejen 55, <span class="underline underline-offset-2"> 4000 Roskilde</span>
+    </div>
+    <div class="categories">
+        <div>Alle</div>
+        <div>Sri Lankan</div>
+        <div>Italian</div>
+        <div>Indian</div>
+        <div>Japanese</div>
+        <button><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <div class="types+products lg:flex">
+        <div class="types-options">
+            <div>
+                <h1> Distance: </h1>
+                <button>Mindre end 3km <i class="fa-solid fa-arrow-down ml-4 -mr-2"></i></button>
+            </div>
+            <div>
+                <h2> Gratis Levering: </h2>
+                <div class="switch-button">
+                    <div></div>
+                </div>
+            </div>
+            <div>
+                <h2> Kun aben nu: </h2>
+                <div class="switch-button">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="all-products">
+            <div class="product-container">
+                <div>
+                    <div class="leftandtop-side" style="
+                    background-image: url(assets/food-33d865e9.webp);
+                    background-position: center; 
+                    background-size: cover;">
+                        <div class="on-image-content">
+                            <div class="flex justify-between">
+                               <div class="resturant-image">
+                                <img src="assets/Restaurant-70b106de.jpg" alt="Restaurant" class="w-full h-full">
+                                </div> 
+                                <div class="offer">
+                                    <p class="-rotate-[20deg]">Spar o tt 10%</p>
+                                </div> 
+                            </div>
+                            <div class="address-on-image">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span><span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightandbottom-side">
+                        <h1 class="hotel-name">Pizza Express</h1>
+                        <p class="hotel-type">Italiaon Restaurant</p>
+                        <div>
+                            <p class="hotel-address"><i class="fa-solid fa-house"></i>
+                                Houing 113A, 2700 Branshej <br class="hidden lg:inline-block"><i class="fa-solid fa-clock mx-1"></i><span class="text-green-700 font-semibold">16:00 - 22:00</span>
+                            </p>
+                            <div class="address-on-content">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span>
+                                    <span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div>
+                    <div class="leftandtop-side" style="
+                    background-image: url(assets/food-33d865e9.webp);
+                    background-position: center; 
+                    background-size: cover;">
+                        <div class="on-image-content">
+                            <div class="flex justify-between">
+                               <div class="resturant-image">
+                                <img src="assets/Restaurant-70b106de.jpg" alt="Restaurant" class="w-full h-full">
+                                </div> 
+                                <div class="offer">
+                                    <p class="-rotate-[20deg]">Spar o tt 10%</p>
+                                </div> 
+                            </div>
+                            <div class="address-on-image">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span><span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightandbottom-side">
+                        <h1 class="hotel-name">Pizza Express</h1>
+                        <p class="hotel-type">Italiaon Restaurant</p>
+                        <div>
+                            <p class="hotel-address"><i class="fa-solid fa-house"></i>
+                                Houing 113A, 2700 Branshej <br class="hidden lg:inline-block"><i class="fa-solid fa-clock mx-1"></i><span class="text-green-700 font-semibold">16:00 - 22:00</span>
+                            </p>
+                            <div class="address-on-content">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span>
+                                    <span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div>
+                    <div class="leftandtop-side" style="
+                    background-image: url(assets/food-33d865e9.webp);
+                    background-position: center; 
+                    background-size: cover;">
+                        <div class="on-image-content">
+                            <div class="flex justify-between">
+                               <div class="resturant-image">
+                                <img src="assets/Restaurant-70b106de.jpg" alt="Restaurant" class="w-full h-full">
+                                </div> 
+                                <div class="offer">
+                                    <p class="-rotate-[20deg]">Spar o tt 10%</p>
+                                </div> 
+                            </div>
+                            <div class="address-on-image">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span><span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightandbottom-side">
+                        <h1 class="hotel-name">Pizza Express</h1>
+                        <p class="hotel-type">Italiaon Restaurant</p>
+                        <div>
+                            <p class="hotel-address"><i class="fa-solid fa-house"></i>
+                                Houing 113A, 2700 Branshej <br class="hidden lg:inline-block"><i class="fa-solid fa-clock mx-1"></i><span class="text-green-700 font-semibold">16:00 - 22:00</span>
+                            </p>
+                            <div class="address-on-content">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span>
+                                    <span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div>
+                    <div class="leftandtop-side" style="
+                    background-image: url(assets/food-33d865e9.webp);
+                    background-position: center; 
+                    background-size: cover;">
+                        <div class="on-image-content">
+                            <div class="flex justify-between">
+                               <div class="resturant-image">
+                                <img src="assets/Restaurant-70b106de.jpg" alt="Restaurant" class="w-full h-full">
+                                </div> 
+                                <div class="offer">
+                                    <p class="-rotate-[20deg]">Spar o tt 10%</p>
+                                </div> 
+                            </div>
+                            <div class="address-on-image">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span><span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightandbottom-side">
+                        <h1 class="hotel-name">Pizza Express</h1>
+                        <p class="hotel-type">Italiaon Restaurant</p>
+                        <div>
+                            <p class="hotel-address"><i class="fa-solid fa-house"></i>
+                                Houing 113A, 2700 Branshej <br class="hidden lg:inline-block"><i class="fa-solid fa-clock mx-1"></i><span class="text-green-700 font-semibold">16:00 - 22:00</span>
+                            </p>
+                            <div class="address-on-content">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span>
+                                    <span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div>
+                    <div class="leftandtop-side" style="
+                    background-image: url(assets/food-33d865e9.webp);
+                    background-position: center; 
+                    background-size: cover;">
+                        <div class="on-image-content">
+                            <div class="flex justify-between">
+                               <div class="resturant-image">
+                                <img src="assets/Restaurant-70b106de.jpg" alt="Restaurant" class="w-full h-full">
+                                </div> 
+                                <div class="offer">
+                                    <p class="-rotate-[20deg]">Spar o tt 10%</p>
+                                </div> 
+                            </div>
+                            <div class="address-on-image">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span><span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightandbottom-side">
+                        <h1 class="hotel-name">Pizza Express</h1>
+                        <p class="hotel-type">Italiaon Restaurant</p>
+                        <div>
+                            <p class="hotel-address"><i class="fa-solid fa-house"></i>
+                                Houing 113A, 2700 Branshej <br class="hidden lg:inline-block"><i class="fa-solid fa-clock mx-1"></i><span class="text-green-700 font-semibold">16:00 - 22:00</span>
+                            </p>
+                            <div class="address-on-content">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span>
+                                    <span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div>
+                    <div class="leftandtop-side" style="
+                    background-image: url(assets/food-33d865e9.webp);
+                    background-position: center; 
+                    background-size: cover;">
+                        <div class="on-image-content">
+                            <div class="flex justify-between">
+                               <div class="resturant-image">
+                                <img src="assets/Restaurant-70b106de.jpg" alt="Restaurant" class="w-full h-full">
+                                </div> 
+                                <div class="offer">
+                                    <p class="-rotate-[20deg]">Spar o tt 10%</p>
+                                </div> 
+                            </div>
+                            <div class="address-on-image">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span><span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightandbottom-side">
+                        <h1 class="hotel-name">Pizza Express</h1>
+                        <p class="hotel-type">Italiaon Restaurant</p>
+                        <div>
+                            <p class="hotel-address"><i class="fa-solid fa-house"></i>
+                                Houing 113A, 2700 Branshej <br class="hidden lg:inline-block"><i class="fa-solid fa-clock mx-1"></i><span class="text-green-700 font-semibold">16:00 - 22:00</span>
+                            </p>
+                            <div class="address-on-content">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span>
+                                    <span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div>
+                    <div class="leftandtop-side" style="
+                    background-image: url(assets/food-33d865e9.webp);
+                    background-position: center; 
+                    background-size: cover;">
+                        <div class="on-image-content">
+                            <div class="flex justify-between">
+                               <div class="resturant-image">
+                                <img src="assets/Restaurant-70b106de.jpg" alt="Restaurant" class="w-full h-full">
+                                </div> 
+                                <div class="offer">
+                                    <p class="-rotate-[20deg]">Spar o tt 10%</p>
+                                </div> 
+                            </div>
+                            <div class="address-on-image">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span><span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightandbottom-side">
+                        <h1 class="hotel-name">Pizza Express</h1>
+                        <p class="hotel-type">Italiaon Restaurant</p>
+                        <div>
+                            <p class="hotel-address"><i class="fa-solid fa-house"></i>
+                                Houing 113A, 2700 Branshej <br class="hidden lg:inline-block"><i class="fa-solid fa-clock mx-1"></i><span class="text-green-700 font-semibold">16:00 - 22:00</span>
+                            </p>
+                            <div class="address-on-content">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span>
+                                    <span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div>
+                    <div class="leftandtop-side" style="
+                    background-image: url(assets/food-33d865e9.webp);
+                    background-position: center; 
+                    background-size: cover;">
+                        <div class="on-image-content">
+                            <div class="flex justify-between">
+                               <div class="resturant-image">
+                                <img src="assets/Restaurant-70b106de.jpg" alt="Restaurant" class="w-full h-full">
+                                </div> 
+                                <div class="offer">
+                                    <p class="-rotate-[20deg]">Spar o tt 10%</p>
+                                </div> 
+                            </div>
+                            <div class="address-on-image">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span><span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightandbottom-side">
+                        <h1 class="hotel-name">Pizza Express</h1>
+                        <p class="hotel-type">Italiaon Restaurant</p>
+                        <div>
+                            <p class="hotel-address"><i class="fa-solid fa-house"></i>
+                                Houing 113A, 2700 Branshej <br class="hidden lg:inline-block"><i class="fa-solid fa-clock mx-1"></i><span class="text-green-700 font-semibold">16:00 - 22:00</span>
+                            </p>
+                            <div class="address-on-content">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span>
+                                    <span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div>
+                    <div class="leftandtop-side" style="
+                    background-image: url(assets/food-33d865e9.webp);
+                    background-position: center; 
+                    background-size: cover;">
+                        <div class="on-image-content">
+                            <div class="flex justify-between">
+                               <div class="resturant-image">
+                                <img src="assets/Restaurant-70b106de.jpg" alt="Restaurant" class="w-full h-full">
+                                </div> 
+                                <div class="offer">
+                                    <p class="-rotate-[20deg]">Spar o tt 10%</p>
+                                </div> 
+                            </div>
+                            <div class="address-on-image">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span><span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightandbottom-side">
+                        <h1 class="hotel-name">Pizza Express</h1>
+                        <p class="hotel-type">Italiaon Restaurant</p>
+                        <div>
+                            <p class="hotel-address"><i class="fa-solid fa-house"></i>
+                                Houing 113A, 2700 Branshej <br class="hidden lg:inline-block"><i class="fa-solid fa-clock mx-1"></i><span class="text-green-700 font-semibold">16:00 - 22:00</span>
+                            </p>
+                            <div class="address-on-content">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span>
+                                    <span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div>
+                    <div class="leftandtop-side" style="
+                    background-image: url(assets/food-33d865e9.webp);
+                    background-position: center; 
+                    background-size: cover;">
+                        <div class="on-image-content">
+                            <div class="flex justify-between">
+                               <div class="resturant-image">
+                                <img src="assets/Restaurant-70b106de.jpg" alt="Restaurant" class="w-full h-full">
+                                </div> 
+                                <div class="offer">
+                                    <p class="-rotate-[20deg]">Spar o tt 10%</p>
+                                </div> 
+                            </div>
+                            <div class="address-on-image">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span><span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightandbottom-side">
+                        <h1 class="hotel-name">Pizza Express</h1>
+                        <p class="hotel-type">Italiaon Restaurant</p>
+                        <div>
+                            <p class="hotel-address"><i class="fa-solid fa-house"></i>
+                                Houing 113A, 2700 Branshej <br class="hidden lg:inline-block"><i class="fa-solid fa-clock mx-1"></i><span class="text-green-700 font-semibold">16:00 - 22:00</span>
+                            </p>
+                            <div class="address-on-content">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span>
+                                    <span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div>
+                    <div class="leftandtop-side" style="
+                    background-image: url(assets/food-33d865e9.webp);
+                    background-position: center; 
+                    background-size: cover;">
+                        <div class="on-image-content">
+                            <div class="flex justify-between">
+                               <div class="resturant-image">
+                                <img src="assets/Restaurant-70b106de.jpg" alt="Restaurant" class="w-full h-full">
+                                </div> 
+                                <div class="offer">
+                                    <p class="-rotate-[20deg]">Spar o tt 10%</p>
+                                </div> 
+                            </div>
+                            <div class="address-on-image">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span><span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightandbottom-side">
+                        <h1 class="hotel-name">Pizza Express</h1>
+                        <p class="hotel-type">Italiaon Restaurant</p>
+                        <div>
+                            <p class="hotel-address"><i class="fa-solid fa-house"></i>
+                                Houing 113A, 2700 Branshej <br class="hidden lg:inline-block"><i class="fa-solid fa-clock mx-1"></i><span class="text-green-700 font-semibold">16:00 - 22:00</span>
+                            </p>
+                            <div class="address-on-content">
+                                <div>
+                                    <span class="border-r border-white text-white pr-2"><i class="fa-solid fa-truck mr-2"></i>30 , (Min.100)</span>
+                                    <span class="text-white pl-2"><i class="fa-solid fa-location-dot mr-2"></i>1 km</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <h1 class="last-paragraph text-xl text-gray-500 w-[70%] text-center mx-auto my-4">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi veniam voluptas dolores esse odio natus maiores magni ipsa qui, iste ullam aut, quas blanditiis, quia delectus aliquid officiis aliquam odit!
+    </h1>
+    <div class="w-[100%] pt-10 overflow-hidden">
+        <footer class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center bg-yellow-300 items-center rounded-tl-[40%] rounded-tr-[60%] -ml-52 -mr-40 border-t-2 border-white text-gray-800 py-20 px-72">
+            <div>
+                <h1>Meal4U</h1>
+                <ul>
+                    <li>Om os</li>
+                    <li>Kontakt os</li>
+                    <li>Handelsbetingelser</li>
+                    <li>Cookie & Privatlivspotitik</li>
+                    <li>Tilmeld en restaurant</li>
+                    <li>Administrer din restaurant</li>
+                </ul>
+            </div>
+            <div>
+                <h1>Meal4U</h1>
+                <ul>
+                    <li>Om os</li>
+                    <li>Kontakt os</li>
+                    <li>Handelsbetingelser</li>
+                    <li>Cookie & Privatlivspotitik</li>
+                    <li>Tilmeld en restaurant</li>
+                    <li>Administrer din restaurant</li>
+                </ul>
+            </div>
+            <div>
+                <h1>Meal4U</h1>
+                <ul>
+                    <li>Om os</li>
+                    <li>Kontakt os</li>
+                    <li>Handelsbetingelser</li>
+                    <li>Cookie & Privatlivspotitik</li>
+                    <li>Tilmeld en restaurant</li>
+                    <li>Administrer din restaurant</li>
+                </ul>
+            </div>
+            <div>
+                <h1>Meal4U</h1>
+                <ul>
+                    <li>Om os</li>
+                    <li>Kontakt os</li>
+                    <li>Handelsbetingelser</li>
+                    <li>Cookie & Privatlivspotitik</li>
+                    <li>Tilmeld en restaurant</li>
+                    <li>Administrer din restaurant</li>
+                </ul>
+            </div>
+            
+        </footer>
+    </div>
+    <div class="flex justify-center space-x-3 my-1">
+        <img src="assets/mastercard-d26a45bb.png" alt="mastercard"  class="h-[20px]">
+        <img src="assets/Maestro_logo-d49adbd0.png" alt="Maestro_logo" class="h-[20px]">
+        <img src="assets/Visa_Logo-f031699e.png" alt="Visa_Logo" class="h-[20px]">
+        <img src="assets/JCB_logo.svg-8aa64c75.webp" alt="JCB_logo" class="h-[20px]">
+        <img src="assets/paypal-b5bf12e4.png" alt="paypal" class="h-[20px]">
+    </div>
+    <div class="flex justify-center text-sm text-gray-500">
+        <p>&copy; 2022 Meal4U.dk</p>
+        <hr>
+        <p>Alle Rettigheder Forbeholders</p>
+        <hr>
+        <p>CVR: 41515295</p>
+    </div>
+
+
+    <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>
