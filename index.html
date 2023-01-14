@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <title>Document</title>
-  <link rel="stylesheet" href="assets/index-b37a1ee6.css">
+  <link rel="stylesheet" href="assets/index-24c205bd.css">
 </head>
 <body>
     <div class="header w-[100%] pb-10 overflow-hidden">
@@ -47,20 +47,38 @@
     <div class="after-header-text text-center xs:-mt-6 sm:hidden">
         Malkevejen 55, <span class="underline underline-offset-2"> 4000 Roskilde</span>
     </div>
-    <div class="categories">
-        <div>Alle</div>
-        <div>Sri Lankan</div>
-        <div>Italian</div>
-        <div>Indian</div>
-        <div>Japanese</div>
-        <button><i class="fa-solid fa-arrow-right"></i></button>
+    
+    <div class="categories w-full my-4 flex justify-between items-center">
+        <div class="wrapper w-full relative overflow-x-hidden">
+            <div class="icon pl-2 flex absolute h-full w-16 top-0 items-center justify-start left-0"><i id="left" class="fa-solid fa-angle-left bg-yellow-400 text-white cursor-pointer text-center rounded-[50%] w-8 h-8 p-2 hover:bg-yellow-500"></i></div>
+            <ul class="tabs-box flex space-x-3 overflow-x-hidden scroll-smooth items-center">
+              <li class="tab ">all</li>
+              <li class="tab ">chinese</li>
+              <li class="tab ">Italiaon</li>
+              <li class="tab ">african</li>
+              <li class="tab ">sea food</li>
+              <li class="tab ">bbq</li>
+              <li class="tab ">extra</li>
+              <li class="tab ">extra</li>
+              <li class="tab ">extra</li>
+              <li class="tab ">extra</li>
+              <li class="tab ">extra</li>
+              <li class="tab ">extra</li>
+              <li class="tab ">extra</li>
+              <li class="tab ">extra</li>
+              <li class="tab ">extra</li>
+              <li class="tab ">extra</li>
+            </ul>
+            <div class="icon pr-2 flex absolute h-full w-16 top-0 items-center justify-end right-0"><i id="right" class="fa-solid fa-angle-right bg-yellow-400 text-white cursor-pointer text-center rounded-[50%] w-8 h-8 p-2 hover:bg-yellow-500"></i></div>
+          </div>
+
     </div>
 
     <div class="types+products lg:flex">
         <div class="types-options">
             <div>
                 <h1> Distance: </h1>
-                <button>Mindre end 3km <i class="fa-solid fa-arrow-down ml-4 -mr-2"></i></button>
+                <button>Mindre<i class="fa-solid fa-arrow-down ml-4 -mr-2"></i></button>
             </div>
             <div>
                 <h2> Gratis Levering: </h2>
@@ -585,10 +603,60 @@
             &copy; 2022 Meal4U.dk Alle Rettigheder Forbeholders CVR: 41515295
         </p>
     </div>
+    
+
+
+
+
 
 
     <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script>
+        const tabsBox = document.querySelector(".tabs-box"),
+allTabs = tabsBox.querySelectorAll(".tab"),
+arrowIcons = document.querySelectorAll(".icon i");
+
+let isDragging = false;
+
+const handleIcons = (scrollVal) => {
+    let maxScrollableWidth = tabsBox.scrollWidth - tabsBox.clientWidth;
+    arrowIcons[0].parentElement.style.display = scrollVal <= 0 ? "none" : "flex";
+    arrowIcons[1].parentElement.style.display = maxScrollableWidth - scrollVal <= 1 ? "none" : "flex";
+}
+
+arrowIcons.forEach(icon => {
+    icon.addEventListener("click", () => {
+        // if clicked icon is left, reduce 350 from tabsBox scrollLeft else add
+        let scrollWidth = tabsBox.scrollLeft += icon.id === "left" ? -340 : 340;
+        handleIcons(scrollWidth);
+    });
+});
+
+allTabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+        tabsBox.querySelector(".active").classList.remove("active");
+        tab.classList.add("active");
+    });
+});
+
+const dragging = (e) => {
+    if(!isDragging) return;
+    tabsBox.classList.add("dragging");
+    tabsBox.scrollLeft -= e.movementX;
+    handleIcons(tabsBox.scrollLeft)
+}
+
+const dragStop = () => {
+    isDragging = false;
+    tabsBox.classList.remove("dragging");
+}
+
+tabsBox.addEventListener("mousedown", () => isDragging = true);
+tabsBox.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", dragStop);
+
+    </script>
 </body>
 
 </html>
